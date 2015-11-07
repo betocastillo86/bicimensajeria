@@ -38,7 +38,7 @@
 #src/*.php
 #src/*.txt
 #src/*.html
-!src/wp-content/plugins/bikedelivery
+
 
 src/*
 !src/wp-content
@@ -46,6 +46,9 @@ src/wp-content/*
 !src/wp-content/plugins
 src/wp-content/plugins/*
 !src/wp-content/plugins/bikedelivery
+src/wp-content/plugins/custom-registration-form-builder-with-submission-manager/*
+!src/wp-content/plugins/custom-registration-form-builder-with-submission-manager/add-form.php
+
 
 
 # ignore all files starting with .
@@ -93,7 +96,7 @@ Thumbs.db
 *.jar
 *.rar
 *.tar
-*.zip
+#*.zip
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins" directory

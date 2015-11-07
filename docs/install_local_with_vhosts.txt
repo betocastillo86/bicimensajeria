@@ -1,0 +1,9 @@
+<VirtualHost *:8081>
+    DocumentRoot "D:/Projects/bici/src"
+    ServerName bicis
+    <Directory "D:/Projects/bici/src">
+        Require all granted
+		Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
