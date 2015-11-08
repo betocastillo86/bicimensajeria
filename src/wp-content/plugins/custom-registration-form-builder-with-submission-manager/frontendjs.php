@@ -16,8 +16,8 @@ jQuery('#crf_contact_form').submit(function ()
 	jQuery('.custom_error').html('');
 	jQuery('.custom_error').hide();
 	jQuery('.customcrferror').html('');
-	
-	var form_type = jQuery('input[name=form_type]').val();
+
+	/*var form_type = jQuery('input[name=form_type]').val();
 	if(form_type == 'reg_form')
 	{
 		var password = jQuery('#inputPassword').val();
@@ -25,7 +25,7 @@ jQuery('#crf_contact_form').submit(function ()
 		var passwordlength = password.length;
 		if(password !="")
 		{
-			/*if(passwordlength < 7)
+			if(passwordlength < 7)
 			{
 				jQuery('.crf_password').children('.custom_error').html('Your password should be at least 7 characters long.');
 				jQuery('.crf_password').children('.custom_error').show();
@@ -34,9 +34,9 @@ jQuery('#crf_contact_form').submit(function ()
 			{
 				jQuery('.crf_confirmpassword').children('.custom_error').html('Password and confirm password do not match.');
 				jQuery('.crf_confirmpassword').children('.custom_error').show();
-			}*/
+			}
 		}
-	}
+	}*/
 	
 	jQuery('.crf_email').each(function (index, element) {
 		var email = jQuery(this).children('input').val();

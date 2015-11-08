@@ -8,6 +8,10 @@
  */
 class User
 {
+
+    protected $view_update_user = null;
+
+
     function __construct()
     {
         $this->set_hooks();
@@ -19,6 +23,9 @@ class User
         add_action('user_register', array($this, 'create_session_after_register'));
         add_action('login_form', array($this, 'show_register_message_on_login'));
         add_filter('login_redirect', array($this, 'redirect_user_by_role') ,10, 3);
+
+
+        $this->view_update_user = new UpdateUserData();
     }
 
     /***

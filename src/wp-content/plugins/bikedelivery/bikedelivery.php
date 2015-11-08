@@ -16,5 +16,11 @@ require_once('inc/BikeDelivery.php');
 require_once('inc/ConstantBD.php');
 require_once('inc/User.php');
 
+/**Views**/
+
+require_once('inc/views/UpdateUserData.php');
+
+
+
 
 $GLOBALS['bike_delivery'] = new BikeDelivery();
