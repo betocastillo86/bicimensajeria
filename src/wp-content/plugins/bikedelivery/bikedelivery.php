@@ -12,6 +12,7 @@ if (defined('URE_PLUGIN_URL')) {
 }
 
 define("BD_PLUGIN_URL", plugin_dir_url(__FILE__));
+define("BD_PLUGIN_DIR", plugin_dir_path(__FILE__));
 
 require_once('inc/BikeDelivery.php');
 require_once('inc/ConstantBD.php');
@@ -23,6 +24,10 @@ require_once('inc/views/UpdateUserData.php');
 require_once('inc/views/NewDeliveryView.php');
 
 
-//AIzaSyDZ23fBsKzTsXNfoXaBdHawqbsTmoyDuTY
+/****Ajax****/
+require_once('inc/BikeDeliveryApi.php');
+
+
+//
 
 $GLOBALS['bike_delivery'] = new BikeDelivery();

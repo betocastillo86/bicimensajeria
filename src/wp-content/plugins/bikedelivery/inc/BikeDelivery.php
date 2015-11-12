@@ -12,11 +12,14 @@ class BikeDelivery
 
     protected $new_delivery_view = null;
 
+    protected $delivery_api = null;
+
 
     function __construct()
     {
         $this->users = new User();
         $this->new_delivery_view = new NewDeliveryView();
+        $this->delivery_api = new BikeDeliveryApi();
     }
 
 }

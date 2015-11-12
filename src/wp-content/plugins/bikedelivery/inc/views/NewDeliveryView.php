@@ -1,6 +1,6 @@
 <?php
 /**
- * Vista que carga toda la información del envío
+ * Vista que carga toda la informaciï¿½n del envï¿½o
  * Created by PhpStorm.
  * User: Beto
  * Date: 11/8/2015
@@ -23,7 +23,7 @@ class NewDeliveryView
                 <div class="panel panel-default">
 
                     <div class="panel-heading">
-                        <h3 class="panel-title">Detalle del envío</h3>
+                        <h3 class="panel-title">Detalle del envï¿½o</h3>
                     </div>
 
                     <div class="panel-body">
@@ -52,24 +52,24 @@ class NewDeliveryView
     }
 
     /***
-     * Muestra la información básica del formulario para solicitar un servicio
+     * Muestra la informaciï¿½n bï¿½sica del formulario para solicitar un servicio
      */
     function basic_order_form()
     {
         wp_enqueue_style("bd-timepicker",BD_PLUGIN_URL.'css/bootstrap-timepicker.min.css' );
-
         wp_enqueue_script("bd-functions",BD_PLUGIN_URL.'js/bikedelivery.js' );
+        wp_enqueue_script("bd-maps-functions",BD_PLUGIN_URL.'js/maps-bikeDelivery.js' );
         wp_enqueue_script("bd-js-timepicker",BD_PLUGIN_URL.'js/bootstrap-timepicker.min.js' );
         wp_enqueue_script("google-maps",'http://maps.google.com/maps/api/js?sensor=false' );
 
 
         ?>
 
-        <div class="col-xs-12">
+        <div class="col-xs-12 addressField">
             <label for="addres_from">Direcci&oacute;n origen</label>
             <input id="addres_from" type="text" data-var="addres_from" class="form-control">
         </div>
-        <div class="col-xs-12">
+        <div class="col-xs-12 addressField">
             <label for="addres_to">Direcci&oacute;n destino</label>
             <input id="addres_to" type="text" data-var="addres_to" class="form-control">
         </div>
@@ -101,7 +101,7 @@ class NewDeliveryView
     {
         ?>
         <script>
-
+            jQuery(document).on('ready', function(){ jQuery(document).bdmap();});
         </script>
 
         <?php
