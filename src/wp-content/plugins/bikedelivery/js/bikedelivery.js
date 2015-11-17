@@ -6,23 +6,7 @@ $(document).on('ready', function(){
     loadDatePicker();
     loadTimePicker();
 
-
-    function loadDatePicker()
-    {
-        $('#order_day').datepicker({
-            minDate :0
-        });
-    }
-
-    function loadTimePicker()
-    {
-        $('#order_time').timepicker();
-    }
-
     //$('#addres_from').on('change', getLocationByAddress);
-
-
-
 
 
     function placeMarker(location)

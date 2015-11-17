@@ -9,5 +9,8 @@
 class ErrorCodes
 {
     /***Direcciones***/
-    public $ERROR_NO_ADDRESS_FOUND = '20001';
+    public static $ERROR_NO_ADDRESS_FOUND = '20001';
+
+    /***Rutas***/
+    public static $ERROR_NO_ROUTE_FOUND = '20002';
 }
